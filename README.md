@@ -60,12 +60,14 @@ O projeto utiliza Entity Framework Core com abordagem Code First e banco de dado
 
 A string de conexão está configurada no arquivo appsettings.json:
 
+```bash
 json
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=UVVConsultasDb;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True"
   }
 }
+```
 
 - Criar e aplicar as migrações:
 
@@ -73,15 +75,18 @@ Com o projeto aberto no Visual Studio, abra o Package Manager Console (Ferrament
 
 ```bash
 Add-Migration Initial
+```
 
 ```bash
 Update-Database
+```
 
 Ou via terminal (fora do Visual Studio):
 
 ```bash
 dotnet ef migrations add Initial
 dotnet ef database update
+```
 
 ### Verificar se o banco foi criado
 1. No Visual Studio, vá em Exibir → SQL Server Object Explorer.
@@ -99,6 +104,7 @@ dotnet ef database update
 ▶### Executar a Aplicação
 ```bash
 dotnet run
+```
 Acesse no navegador:
 
 text
