@@ -108,8 +108,4 @@ dotnet run
 
 ou **Clique no botão verde com o ícone de play (▶) na barra de ferramentas superior.**
 
-Acesse no navegador:
 
-text
-https://localhost:5001
-(A porta pode variar – verifique no terminal após o dotnet run)
