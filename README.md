@@ -105,6 +105,9 @@ dotnet ef database update
 ```bash
 dotnet run
 ```
+
+ou aperte o ícone de iniciar na parte de cima da tela do visual studio
+
 Acesse no navegador:
 
 text
