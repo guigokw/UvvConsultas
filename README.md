@@ -106,7 +106,7 @@ dotnet ef database update
 dotnet run
 ```
 
-ou aperte o ícone de iniciar na parte de cima da tela do visual studio
+ou **Clique no botão verde com o ícone de play (▶) na barra de ferramentas superior.**
 
 Acesse no navegador:
 
