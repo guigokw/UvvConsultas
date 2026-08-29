@@ -31,18 +31,24 @@ Sistema web desenvolvido em **ASP.NET Core MVC** para gerenciamento de consultas
 1. **Clone o repositório**
 
 ```bash
+
 git clone https://github.com/guigokw/UvvConsultas.git
 cd UvvConsultas
+
+```
 
 2. **Restaure os pacotes**
 
 ```bash
 dotnet restore
 
+```
+
 3. **Compile o projeto**
 
 ```bash
 dotnet build
+```
 
 ---
 
