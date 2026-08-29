@@ -1,0 +1,35 @@
+@model UvvConsultas.Models.Consulta
+
+@{
+    ViewData["Title"] = "Detalhes da Consulta";
+}
+
+<h2>Detalhes da Consulta</h2>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Especialidade)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Especialidade)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DataHora)
+        </dt>
+        <dd class="col-sm-10">
+            @Model.DataHora.ToString("dd/MM/yyyy HH:mm")
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdConsulta" class="btn btn-warning">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+</div>

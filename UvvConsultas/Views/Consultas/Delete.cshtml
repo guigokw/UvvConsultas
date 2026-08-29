@@ -1,0 +1,38 @@
+@model UvvConsultas.Models.Consulta
+
+@{
+    ViewData["Title"] = "Excluir Consulta";
+}
+
+<h2>Confirmar Exclusão</h2>
+
+<div>
+    <h4>Deseja realmente excluir esta consulta?</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Especialidade)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Especialidade)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DataHora)
+        </dt>
+        <dd class="col-sm-10">
+            @Model.DataHora.ToString("dd/MM/yyyy HH:mm")
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="IdConsulta" />
+        <input type="submit" value="Confirmar Exclusão" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
