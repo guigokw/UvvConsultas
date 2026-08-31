@@ -9,6 +9,12 @@
     <a asp-action="Create" class="btn btn-primary">Nova Consulta</a>
 </div>
 
+<div class="">
+    <form asp-controller="Usuarios" asp-action="Logout" method="post">
+        <button type="submit" class="btn btn-danger">Voltar a página inicial</button>
+    </form>
+</div>
+
 @if (!Model.Any())
 {
     <p>Você ainda não tem consultas agendadas.</p>
